@@ -1,3 +1,4 @@
 # Telegram-scraper
-Script to scrape Telegram data and store as CSV
+Script to scrape Telegram data and store as CSV. Also, a JSON file to CSV converter, if you happen to have JSON Telegram files. Finally, a Script that looks for other Telegram channels in the sample you`ve scraped.
+Data that can be collected with these scripts can be used for (computational) social science projects. You may not use these scripts for commercial purposes. Use the provided scripts ethically and in accordance with your local laws and regulations. 
 If you use any of the scripts in this repository for non-commercial research (commercial purposes are not granted by the license!) cite in accordance with lincence [Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)] as (adapt to your citation guidelines): Primig, F. & Fröschl, F. (2021). Telegram-scraper. https://github.com/FlorianPrimig/Telegram-scraper. 
