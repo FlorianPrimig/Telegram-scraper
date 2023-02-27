@@ -11,8 +11,9 @@ from telethon.tl.types import (
 )
 
 
-# Hier den Pfad vom CSV mit Channel-Links einfügen und Seriennummer anpassen (entsprechend der Nummer des csv files).
-# Würde die Seriennummer immer einem konkreten CSV file mit Channel-Link listen korrespondierend zuweisen
+# Insert path to csv file with list of channels (channel-links) here.
+# Give this round a unique serial number (the serial number will be attached to all your downloaded csv files with telegram data 
+# for easy tracking of your workflow. Adjust for every round!)
 csv_inputfile_path = r"YourPath.csv"
 serial_number = 1
 
@@ -20,7 +21,7 @@ serial_number = 1
 api_id = credentials.api_id
 api_hash = credentials.api_hash
 
-# use full phone number including + and country code
+# use full phone number including + and country code (this calls your credentials stored in the credential file in the same workspace)
 phone = credentials.phone
 username = credentials.username
 api_hash = str(api_hash)
@@ -131,7 +132,7 @@ async def main(phone):
     me = await client.get_me()
     channel_counter = 0
     continue_excecution = True
-    # So viele Chats werden vor der Pause analysiert und Pause ist X minuten lang (siehe auch am Ende des scripts)
+    # This is how many channels will be scraped before the sleep/pause + pause time (adjust if necessary but be mindful and respect Telegram API resources)
     loop_limit = 15
     minutes_to_pause = 3
 
@@ -230,6 +231,6 @@ async def main(phone):
                 loop_limit += 15
                 time.sleep(minutes_to_pause * 180)
 
-# hier oben loop_limit und time.sleep nach Bedarf anpassen!
+# adjust loop limit and sleep time if neccessary above ^!
 with client:
     client.loop.run_until_complete(main(phone))
