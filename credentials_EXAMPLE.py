@@ -1,5 +1,5 @@
-api_id = '3241562376'
-api_hash = 'oihaowidhf7832946ijhdishnf'
+api_id = 'YourAPI_ID'
+api_hash = 'YourAPI_Hash'
 
-phone = '000898635293478'
-username = 'Blörpadörü'
+phone = 'Your_Phone_Number_connected_to_Telegram'
+username = 'Your_UserName_on_Telegram'
