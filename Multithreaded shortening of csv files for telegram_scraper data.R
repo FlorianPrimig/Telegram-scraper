@@ -92,33 +92,3 @@ parallel::stopCluster(cl = my.cluster)
 #}
 #perhaps it's better for you to save not as csv in the end of the loop but as rds with "saveRDS(df, filename)" in line 84
 #you`d have to adjust to "filename = paste0(i, ".rds")" then in line 82 as well.
-
-
-
-
-
-
-df_teste = read.csv("F:\\Telegram_Daten_Neu\\CSV Files\\subset4\\channel_messages_1_0183_Brennpunkt_Deutschland.csv.csv")
-sapply(df_teste, class)
-df_teste2 = read.csv("F:\\Telegram_Daten_Neu\\CSV Files\\subset4\\channel_messages_1_0046_uncut_news.csv.csv")
-df_teste2 <- as.data.frame(lapply(df_teste2, as.character))
-?lapply
-
-df_teste3 <- as.data.frame(lapply(df_teste2, function(X){
-  X[1:14] <- lapply(X[1:14], as.character)
-  X
-}))
-
-data_all <- list.files(path = "F:\\Telegram_Daten_Neu\\CSV Files\\subset4\\bind",     # Identify all csv files in folder
-                       pattern = ".csv", full.names = TRUE) %>% 
-  lapply(read_csv) %>%                                            # Store all files in list
-  bind_rows                                                       # Combine data sets into one data set 
-data_all                                                          # Print data to RStudio console 
-df_neu <- lapply(data_all, as.character)
-sapply(df_neu, class)
-
-col_types = cols(.default = "c")
-?rbind
-# Combine data sets into one data set 
-data_all 
-?read.csv
