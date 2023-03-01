@@ -7,9 +7,6 @@ library("readr")
 library("tibble")
 library("data.table")
 
-
-na_strings <- c("NA", "N A", "N / A", "N/A", "N/ A", "Not Available", "NOt available", "false", "FALSE")
-
 #get a list of all csv files
 filelist = list.files(path = "C:\\Telegram Daten final",     # Identify all csv files in folder
                       pattern = ".csv", full.names = TRUE)
