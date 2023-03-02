@@ -2,7 +2,7 @@ import csv
 
 
 def main():
-    filepath = r"test_file.txt"
+    filepath = r"test_file.txt" #put the path(s) to your seed channel(s) here as a txt file
     output_filename_all_links = "channel_links_snowballing_round_1_all_links.csv"
     continue_execution = True
     try:
