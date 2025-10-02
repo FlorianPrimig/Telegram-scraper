@@ -5,4 +5,5 @@ If you use any of the scripts in this repository for non-commercial research (co
 
 Primig, F., & Fröschl, F. (2023). Telegram-scraper. https://github.com/FlorianPrimig/Telegram-scraper. 
 
-Note that this repository is not very actively maintained but that we plan on releasing a more elegant version of the code soon.
+Note that this repository is not very actively maintained but that we plan on releasing a more elegant version of the code soon:
+A more refined tool can now be found here: https://github.com/Froschi1860/F-R-O-G-Telegram-scraping-tool/blob/main/README.md
